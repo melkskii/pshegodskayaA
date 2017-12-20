@@ -1,0 +1,16 @@
+C:\Users\Алина\Desktop\8Ball\DAL\bin\Debug\DAL.dll
+C:\Users\Алина\Desktop\8Ball\DAL\bin\Debug\DAL.pdb
+C:\Users\Алина\Desktop\8Ball\DAL\bin\Debug\Contract.dll
+C:\Users\Алина\Desktop\8Ball\DAL\bin\Debug\Contract.pdb
+C:\Users\Алина\Desktop\8Ball\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+C:\Users\Алина\Desktop\8Ball\DAL\obj\Debug\DAL.dll
+C:\Users\Алина\Desktop\8Ball\DAL\obj\Debug\DAL.pdb
+C:\Users\Алина\Desktop\8Ball\DAL\bin\Debug\Answers.xml
+C:\Users\Алина\Source\Repos\pshegodskayaA\8Ball\DAL\bin\Debug\Answers.xml
+C:\Users\Алина\Source\Repos\pshegodskayaA\8Ball\DAL\bin\Debug\DAL.dll
+C:\Users\Алина\Source\Repos\pshegodskayaA\8Ball\DAL\bin\Debug\DAL.pdb
+C:\Users\Алина\Source\Repos\pshegodskayaA\8Ball\DAL\bin\Debug\Contract.dll
+C:\Users\Алина\Source\Repos\pshegodskayaA\8Ball\DAL\bin\Debug\Contract.pdb
+C:\Users\Алина\Source\Repos\pshegodskayaA\8Ball\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+C:\Users\Алина\Source\Repos\pshegodskayaA\8Ball\DAL\obj\Debug\DAL.dll
+C:\Users\Алина\Source\Repos\pshegodskayaA\8Ball\DAL\obj\Debug\DAL.pdb

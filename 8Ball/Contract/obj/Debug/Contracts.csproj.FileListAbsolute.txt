@@ -1,0 +1,6 @@
+C:\Users\Алина\Desktop\8Ball\Contract\bin\Debug\Contract.dll
+C:\Users\Алина\Desktop\8Ball\Contract\bin\Debug\Contract.pdb
+C:\Users\Алина\Desktop\8Ball\Contract\obj\Debug\Contracts.csprojResolveAssemblyReference.cache
+C:\Users\Алина\Desktop\8Ball\Contract\obj\Debug\Contract.dll
+C:\Users\Алина\Desktop\8Ball\Contract\obj\Debug\Contract.pdb
+C:\Users\Алина\Desktop\8Ball\Contract\bin\Debug\Contract.dll.config
