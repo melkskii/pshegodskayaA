@@ -19,6 +19,7 @@ namespace BL
         {
             if (!File.Exists(config.DataReaderAssembly))
                 throw new ArgumentException("Assembly isn't exist");
+            //REVIEW: В каждой следующей строчке может быть исключение
             var assembly = Assembly.LoadFile(config.DataReaderAssembly);
             var foundClass = assembly.GetExportedTypes().FirstOrDefault(x => x.GetInterface("IDAL") != null);
             if (foundClass == null)
@@ -36,6 +37,7 @@ namespace BL
         {
             try
             {
+                //REVIEW: все адреса, url - в настройки
                 MailAddress from = new MailAddress("awesome.magic@yandex.ru", "Magic 8 Ball");
                  MailAddress to = new MailAddress(email);
                  MailMessage m = new MailMessage(from, to);
@@ -49,6 +51,7 @@ namespace BL
             }
             catch(Exception ex)
             {
+                //REVIEW: Логировать исключение
                 throw new InvalidDataException("Message sending error", ex);
             }
             

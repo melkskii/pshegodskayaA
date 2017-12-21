@@ -14,6 +14,7 @@ namespace _8Ball
     {
         public override ValidationResult Validate(object value, CultureInfo cultureInfo)
         {
+            //REVIEW: value=null - и здесь будет NRE
             if (Regex.IsMatch(value.ToString(), @"^([\w\.\-]+)@([\w\-]+)((\.(\w){2,3})+)$"))
             {
                 return new ValidationResult(true, String.Empty);

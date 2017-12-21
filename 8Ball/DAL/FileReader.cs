@@ -29,6 +29,7 @@ namespace DAL
             }
             catch (Exception ex)
             {
+                //REVIEW: Бессмысленно просто прокидывать исключение. Надо его хотя бы логировать
                 throw new InvalidDataException("XML file reading error", ex);
             }
         }
