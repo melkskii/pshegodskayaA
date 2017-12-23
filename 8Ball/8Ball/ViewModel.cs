@@ -47,7 +47,7 @@ namespace _8Ball
         }
         public ViewModel()
         {
-            // Logger.InitLogger();
+            Logger.InitLogger();
             _answer = "";
             description = "Concentrate on your yes-no question and shake the magic 8 ball. ";
             Shake = new Shake();

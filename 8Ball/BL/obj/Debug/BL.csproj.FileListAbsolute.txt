@@ -8,3 +8,16 @@ C:\Users\Алина\Desktop\8Ball\BL\obj\Debug\BL.csprojResolveAssemblyReference
 C:\Users\Алина\Desktop\8Ball\BL\obj\Debug\BL.dll
 C:\Users\Алина\Desktop\8Ball\BL\obj\Debug\BL.pdb
 C:\Users\Алина\Desktop\8Ball\BL\bin\Debug\Answers.xml
+C:\Users\Алина\Source\Repos\pshegodskayaA\8Ball\BL\bin\Debug\Answers.xml
+C:\Users\Алина\Source\Repos\pshegodskayaA\8Ball\BL\bin\Debug\BL.dll.config
+C:\Users\Алина\Source\Repos\pshegodskayaA\8Ball\BL\bin\Debug\BL.dll
+C:\Users\Алина\Source\Repos\pshegodskayaA\8Ball\BL\bin\Debug\BL.pdb
+C:\Users\Алина\Source\Repos\pshegodskayaA\8Ball\BL\bin\Debug\Contract.dll
+C:\Users\Алина\Source\Repos\pshegodskayaA\8Ball\BL\bin\Debug\DAL.dll
+C:\Users\Алина\Source\Repos\pshegodskayaA\8Ball\BL\bin\Debug\log4net.dll
+C:\Users\Алина\Source\Repos\pshegodskayaA\8Ball\BL\bin\Debug\Contract.pdb
+C:\Users\Алина\Source\Repos\pshegodskayaA\8Ball\BL\bin\Debug\DAL.pdb
+C:\Users\Алина\Source\Repos\pshegodskayaA\8Ball\BL\bin\Debug\log4net.xml
+C:\Users\Алина\Source\Repos\pshegodskayaA\8Ball\BL\obj\Debug\BL.csprojResolveAssemblyReference.cache
+C:\Users\Алина\Source\Repos\pshegodskayaA\8Ball\BL\obj\Debug\BL.dll
+C:\Users\Алина\Source\Repos\pshegodskayaA\8Ball\BL\obj\Debug\BL.pdb

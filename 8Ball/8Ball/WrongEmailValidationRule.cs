@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Contract;
+using System;
 using System.Collections.Generic;
 using System.Globalization;
 using System.Linq;
@@ -17,7 +18,7 @@ namespace _8Ball
             
             if (String.IsNullOrWhiteSpace(value.ToString()))
             {
-                // Logger.Log.Error("Email field is empty");
+                Logger.Log.Error("Email field is empty");
                 throw new ArgumentNullException("Email field is empty");
 
             }

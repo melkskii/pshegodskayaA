@@ -14,3 +14,5 @@ C:\Users\Алина\Source\Repos\pshegodskayaA\8Ball\DAL\bin\Debug\Contract.pdb
 C:\Users\Алина\Source\Repos\pshegodskayaA\8Ball\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
 C:\Users\Алина\Source\Repos\pshegodskayaA\8Ball\DAL\obj\Debug\DAL.dll
 C:\Users\Алина\Source\Repos\pshegodskayaA\8Ball\DAL\obj\Debug\DAL.pdb
+C:\Users\Алина\Source\Repos\pshegodskayaA\8Ball\DAL\bin\Debug\log4net.dll
+C:\Users\Алина\Source\Repos\pshegodskayaA\8Ball\DAL\bin\Debug\log4net.xml

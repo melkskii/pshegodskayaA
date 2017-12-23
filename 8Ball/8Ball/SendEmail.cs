@@ -28,7 +28,7 @@ namespace _8Ball
         {
             if (String.IsNullOrWhiteSpace(_8Ball.Properties.Settings.Default.DataConnection))
             {
-                // Logger.Log.Error("Data connection is not found!");
+                Logger.Log.Error("Data connection is not found!");
                 throw new ArgumentNullException("DataConnection is not found");
 
             }
@@ -44,18 +44,18 @@ namespace _8Ball
             var vm = parameter as ViewModel;
             if (vm == null)
             {
-                // Logger.Log.Error("ViewModel can't be null");
+                Logger.Log.Error("ViewModel can't be null");
                 throw new ArgumentNullException("Модель представления не можеть быть null");
             };
             if (String.IsNullOrWhiteSpace(vm.email))
             {
-                //  Logger.Log.Error("Email is empty");
+                Logger.Log.Error("Email is empty");
                 vm.email = "Email is empty";
 
             }
             if (String.IsNullOrWhiteSpace(vm.answer))
             {
-                // Logger.Log.Error("Shake it first");
+                Logger.Log.Error("Shake it first");
                 vm.email = "Shake it first";
             }
             bool wrongEmail;
@@ -68,7 +68,7 @@ namespace _8Ball
             }
             catch
             {
-                // Logger.Log.Error("Email is wrong");
+                Logger.Log.Error("Email is wrong");
                 wrongEmail = false;
 
             }
@@ -78,7 +78,7 @@ namespace _8Ball
                 vm.email = null;
 
             }
-            else vm.email = "wrong email";
+            else vm.email = " wrong email or empty answer";
 
              
             

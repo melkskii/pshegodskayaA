@@ -39,7 +39,7 @@ namespace _8Ball
             var vm = parameter as ViewModel;
             if (vm == null)
             {
-                // Logger.Log.Error("ViewModel can't be null");
+                Logger.Log.Error("ViewModel can't be null");
                 throw new ArgumentNullException("Модель представления не можеть быть null");
             }
             vm.answer = fp.Shake(fp.Answers);          

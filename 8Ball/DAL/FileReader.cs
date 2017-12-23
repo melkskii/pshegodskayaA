@@ -16,7 +16,7 @@ namespace DAL
             var path = Path.GetFullPath(XMLPath);
             if (!File.Exists(path))
             {
-                // Logger.Log.Error("XML file isn't exist");
+                Logger.Log.Error("XML file isn't exist");
                 throw new FileNotFoundException("XML file isn't exist");
             }
             try
@@ -33,7 +33,7 @@ namespace DAL
             }
             catch (Exception ex)
             {
-                // Logger.Log.Error("XML file reading error");
+                Logger.Log.Error("XML file reading error");
                 throw new InvalidDataException("XML file reading error", ex);
             }
         }

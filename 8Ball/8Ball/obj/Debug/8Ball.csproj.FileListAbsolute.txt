@@ -60,3 +60,5 @@ C:\Users\Алина\Source\Repos\pshegodskayaA\8Ball\8Ball\obj\Debug\Resources.b
 C:\Users\Алина\Source\Repos\pshegodskayaA\8Ball\8Ball\obj\Debug\8Ball.g.resources
 C:\Users\Алина\Source\Repos\pshegodskayaA\8Ball\8Ball\obj\Debug\_8Ball.Properties.Resources.resources
 C:\Users\Алина\Source\Repos\pshegodskayaA\8Ball\8Ball\obj\Debug\8Ball.csproj.GenerateResource.Cache
+C:\Users\Алина\Source\Repos\pshegodskayaA\8Ball\8Ball\bin\Debug\log4net.dll
+C:\Users\Алина\Source\Repos\pshegodskayaA\8Ball\8Ball\bin\Debug\log4net.xml
