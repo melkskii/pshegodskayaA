@@ -24,7 +24,7 @@ namespace _8Ball
         {
             if (String.IsNullOrWhiteSpace(_8Ball.Properties.Settings.Default.DataConnection))
             {
-                // Logger.Log.Error("Data connection is not found");
+                 Logger.Log.Error("Data connection is not found");
                 throw new ArgumentNullException("DataConnection is not found");
 
             }
