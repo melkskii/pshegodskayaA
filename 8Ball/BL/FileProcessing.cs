@@ -18,13 +18,51 @@ namespace BL
         public FileProcessing(Config config)
         {
             if (!File.Exists(config.DataReaderAssembly))
+            {
+                //  Logger.Log.Error("Assembly isn't exist");
                 throw new ArgumentException("Assembly isn't exist");
-            //REVIEW: В каждой следующей строчке может быть исключение
-            var assembly = Assembly.LoadFile(config.DataReaderAssembly);
-            var foundClass = assembly.GetExportedTypes().FirstOrDefault(x => x.GetInterface("IDAL") != null);
+
+            }
+
+            if (config == null)
+            {
+                // Logger.Log.Error("Config is null");
+                throw new ArgumentNullException("Config is null");
+
+            }
+            Assembly assembly = null;
+            Type foundClass = null;
+            try
+            {
+                assembly = Assembly.LoadFile(config.DataReaderAssembly);
+                // Logger.Log.Info("assembly loaded");
+                foundClass = assembly.GetExportedTypes().FirstOrDefault(x => x.GetInterface("IDAL") != null);
+                // Logger.Log.Info("reader class loaded");
+
+            }
+            catch (Exception ex)
+            {
+                //  Logger.Log.Error("Can't create reader", ex);
+                throw new InvalidOperationException("Can't get reader");
+            }
+
             if (foundClass == null)
+            {
+                // Logger.Log.Error("Can't find class with IDAL interface");
                 throw new InvalidOperationException("Can't find class with IDAL interface");
+            }
             IDAL rd = Activator.CreateInstance(assembly.FullName, foundClass.FullName).Unwrap() as IDAL;
+            if (rd == null)
+            {
+                // Logger.Log.Error("Can't create instance");
+                throw new InvalidOperationException("Can't create instance");
+            }
+            if (!File.Exists(config.DataPath))
+            {
+                // Logger.Log.Error("DataPath isn't exist ");
+                throw new FileNotFoundException("DataPath isn't exist ");
+
+            }
             Answers = rd.DataReader(config.DataPath);
 
         }
@@ -51,7 +89,7 @@ namespace BL
             }
             catch(Exception ex)
             {
-                //REVIEW: Логировать исключение
+                // Logger.Log.Error("Message sending error");
                 throw new InvalidDataException("Message sending error", ex);
             }
             

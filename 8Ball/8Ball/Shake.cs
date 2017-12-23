@@ -23,7 +23,11 @@ namespace _8Ball
         public void Execute(object parameter)
         {
             if (String.IsNullOrWhiteSpace(_8Ball.Properties.Settings.Default.DataConnection))
+            {
+                // Logger.Log.Error("Data connection is not found");
                 throw new ArgumentNullException("DataConnection is not found");
+
+            }
 
             Config config = new Config();
             config.DataPath = Path.GetFullPath(_8Ball.Properties.Settings.Default.DataConnection);
@@ -33,7 +37,11 @@ namespace _8Ball
             FileProcessing fp = new FileProcessing(config);
 
             var vm = parameter as ViewModel;
-            if (vm == null) throw new ArgumentNullException("Модель представления не можеть быть null");
+            if (vm == null)
+            {
+                // Logger.Log.Error("ViewModel can't be null");
+                throw new ArgumentNullException("Модель представления не можеть быть null");
+            }
             vm.answer = fp.Shake(fp.Answers);          
         }
     }

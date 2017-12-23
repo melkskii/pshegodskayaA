@@ -27,7 +27,11 @@ namespace _8Ball
         public void Execute(object parameter)
         {
             if (String.IsNullOrWhiteSpace(_8Ball.Properties.Settings.Default.DataConnection))
+            {
+                // Logger.Log.Error("Data connection is not found!");
                 throw new ArgumentNullException("DataConnection is not found");
+
+            }
 
             Config config = new Config();
 
@@ -38,22 +42,35 @@ namespace _8Ball
             FileProcessing fp = new FileProcessing(config);
 
             var vm = parameter as ViewModel;
-            if (vm == null) throw new ArgumentNullException("Модель представления не можеть быть null");
+            if (vm == null)
+            {
+                // Logger.Log.Error("ViewModel can't be null");
+                throw new ArgumentNullException("Модель представления не можеть быть null");
+            };
             if (String.IsNullOrWhiteSpace(vm.email))
-                vm.email="Email is empty";
+            {
+                //  Logger.Log.Error("Email is empty");
+                vm.email = "Email is empty";
+
+            }
             if (String.IsNullOrWhiteSpace(vm.answer))
-                vm.email="Shake it first";
+            {
+                // Logger.Log.Error("Shake it first");
+                vm.email = "Shake it first";
+            }
             bool wrongEmail;
             try
             {
-                
+
                 MailAddress from = new MailAddress(vm.email);
-                wrongEmail= true;
+                wrongEmail = true;
 
             }
             catch
             {
-                wrongEmail= false;
+                // Logger.Log.Error("Email is wrong");
+                wrongEmail = false;
+
             }
             if (wrongEmail == true)
             {

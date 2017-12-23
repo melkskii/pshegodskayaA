@@ -14,7 +14,11 @@ namespace DAL
         public List<string> DataReader(string XMLPath)
         {
             var path = Path.GetFullPath(XMLPath);
-            if (!File.Exists(path)) throw new FileNotFoundException("XML file isn't exist");
+            if (!File.Exists(path))
+            {
+                // Logger.Log.Error("XML file isn't exist");
+                throw new FileNotFoundException("XML file isn't exist");
+            }
             try
             {
                 XDocument xmlDocument = XDocument.Load(path);
@@ -29,7 +33,7 @@ namespace DAL
             }
             catch (Exception ex)
             {
-                //REVIEW: Бессмысленно просто прокидывать исключение. Надо его хотя бы логировать
+                // Logger.Log.Error("XML file reading error");
                 throw new InvalidDataException("XML file reading error", ex);
             }
         }
